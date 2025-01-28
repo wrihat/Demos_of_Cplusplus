@@ -72,6 +72,5 @@ int main() {
     cout<<"堆顶元素"<<heap.pop()<<endl;
     heap.printHeap();
 
-
     return 0;
 }
