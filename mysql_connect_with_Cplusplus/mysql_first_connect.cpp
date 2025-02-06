@@ -12,7 +12,7 @@ int main() {
         return EXIT_FAILURE;
     }
     //连接到MySQL数据库
-    if(mysql_real_connect(conn, "127.0.0.1", "jiajun", "zou.9527", NULL, 3306, NULL, 0) == NULL) {
+    if(mysql_real_connect(conn, "127.0.0.1", "user", "your_password", NULL, 3306, NULL, 0) == NULL) {
         cerr<<"mysql_real_connect() failed: "<<mysql_error(conn)<<endl;
         return EXIT_FAILURE;
     }

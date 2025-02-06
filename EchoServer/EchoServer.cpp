@@ -36,7 +36,7 @@ int main() {
         close(server_fd);
         exit(EXIT_FAILURE);
     } 
-    if(listen(server_fd, 3) < 0) {  //list之后会陷入阻塞
+    if(listen(server_fd, 3) < 0) {  // listen是将fd设置为listen状态，进程/线程本身并不会阻塞，而是accept会发生阻塞
         perror("listen failed");
         close(server_fd);
         exit(EXIT_FAILURE);
