@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/quickSort.dir/quickSort.cpp.o -o ../bin/quickSort 
