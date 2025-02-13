@@ -39,12 +39,12 @@ public:
         }
     }
 
-    void push(int value) {
+    void push(int value) {   // 当一个元素如堆时，先添加到堆尾，再向上调整
         m_heap.push_back(value);
         heapfiy_up(m_heap.size() - 1);
     }
 
-    int pop() {
+    int pop() {  // 当堆顶元素出堆时，先将最后的元素替换掉堆顶，再向下调整
         if(m_heap.size() <= 0) return -1;
         int pop_value = m_heap[0];   
         swap(m_heap[0], m_heap[m_heap.size() - 1]);
