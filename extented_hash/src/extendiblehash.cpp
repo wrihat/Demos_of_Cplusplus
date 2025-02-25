@@ -1,6 +1,6 @@
 #include "include/extendiblehash.h"
 #include <algorithm>
-#include "extendiblehash.h"
+#include "include/extendiblehash.h"
 
 ExtendibleHash::ExtendibleHash(int bucketSize)
     :bucketSize(bucketSize), globalDepth(1)
@@ -23,31 +23,33 @@ ExtendibleHash::~ExtendibleHash() {
     for(auto bucketPtr: uniqueBuckets) {
         delete bucketPtr;
     }
-
 }
 
 void ExtendibleHash::insert(int key, int value) {
     int hashVal = hashFunction(key);
+    cout<<"计算得到的hash值："<<hashVal<<endl;
     int index = getDirectoryIndex(hashVal);
+    cout<<"获取Bucket指针"<<endl;
     Bucket* bucket = directory[index];
-
+    cout<<"获取Bucket指针成功"<<endl;
     // 若键已存在，则更新值
     for (auto &record : bucket->records) {
-            if (record.key == key) {
-                record.value = value;
-                return;
-            }
+        cout<<"当前的key值："<<record.key<<endl;
+        if (record.key == key) {
+            record.value = value;
+            return;
         }
+    }
 
-        // 如果桶未满，则直接插入新记录
-        if (bucket->records.size() < bucketSize) {
-            cout<<"桶未满, 直接插入"<<endl;
-            bucket->records.push_back(Record(key, value));
-        } else {
-            // 桶满时，先进行桶分裂，再重新插入该记录
-            splitBucket(index);
-            insert(key, value);
-        }
+    // 如果桶未满，则直接插入新记录
+    if (bucket->records.size() < bucketSize) {
+        cout<<"桶未满, 直接插入"<<endl;
+        bucket->records.push_back(Record(key, value));
+    } else {
+        // 桶满时，先进行桶分裂，再重新插入该记录
+        splitBucket(index);
+        insert(key, value);
+    }
 
 }
 

@@ -4,10 +4,8 @@ using namespace std;
 
 
 int main(){
-    cout<<"hello world"<<endl;
     // 创建一个桶容量为 2 的可扩展哈希表
     ExtendibleHash hashTable(2);
-
     // 插入一系列键值对
     int keys[]   = {5, 15, 25, 35, 45, 55};
     int values[] = {50, 150, 250, 350, 450, 550};

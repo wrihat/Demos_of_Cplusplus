@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "../bin/main"
   "../bin/main.pdb"
-  "CMakeFiles/main.dir/src/extendiblehash.cpp.o"
-  "CMakeFiles/main.dir/src/extendiblehash.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
 )

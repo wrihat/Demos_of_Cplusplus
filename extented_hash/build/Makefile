@@ -129,30 +129,6 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/extendiblehash.o: src/extendiblehash.cpp.o
-.PHONY : src/extendiblehash.o
-
-# target to build an object file
-src/extendiblehash.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/extendiblehash.cpp.o
-.PHONY : src/extendiblehash.cpp.o
-
-src/extendiblehash.i: src/extendiblehash.cpp.i
-.PHONY : src/extendiblehash.i
-
-# target to preprocess a source file
-src/extendiblehash.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/extendiblehash.cpp.i
-.PHONY : src/extendiblehash.cpp.i
-
-src/extendiblehash.s: src/extendiblehash.cpp.s
-.PHONY : src/extendiblehash.s
-
-# target to generate assembly for a file
-src/extendiblehash.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/extendiblehash.cpp.s
-.PHONY : src/extendiblehash.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... src/extendiblehash.o"
-	@echo "... src/extendiblehash.i"
-	@echo "... src/extendiblehash.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -4,11 +4,12 @@
 #include <iostream>
 #include <vector>
 #include <stdexcept>
+#include <algorithm>
 using namespace std;
 struct Record{  // 记录结构，保存键值(数据项)
     int key;
     int value;
-    Record(int key, int value): key(key), value(value){}
+    Record(int k, int v): key(k), value(v){}
 };
 
 struct Bucket{  // 桶结构体，保存局部深度和存储的记录
@@ -25,7 +26,7 @@ public:
     void insert(int key, int value);
     // 查找键对应的值，不存在则抛出异常
     int find(int key);
-    void print();  // 打印桶信息和里面的记录信息
+    void print();  
 
 private:
     int bucketSize;             // 每个桶的最大容量
@@ -41,14 +42,6 @@ private:
     // 扩展目录，将全局深度加1，目录索引数量翻倍
     void doubleDirectory();
 };
-
-
-
-
-
-
-
-
 
 
 #endif
