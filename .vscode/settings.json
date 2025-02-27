@@ -55,6 +55,8 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "sstream": "cpp",
+        "shared_mutex": "cpp"
     }
 }
