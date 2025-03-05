@@ -17,7 +17,7 @@ public:
         return iter->second;
     }
 
-    void set(int key, int value) {
+    void put(int key, int value) {
         if(m_hashTable.find(key) != m_hashTable.end()) {
             auto& iter = m_hashTable[key];
             iter->second = value;
@@ -48,14 +48,14 @@ private:
    unordered_map<int, list<pair<int, int>>::iterator> m_hashTable; 
 };
 
-int main() {
-    LRUCache lru(3);
-    lru.set(1, 11);
-    lru.set(2, 12);
-    lru.set(3, 13);
-    lru.set(4, 14);
-    lru.set(1, 15);
-    lru.printLRU();
+// int main() {
+//     LRUCache lru(3);
+//     lru.set(1, 11);
+//     lru.set(2, 12);
+//     lru.set(3, 13);
+//     lru.set(4, 14);
+//     lru.set(1, 15);
+//     lru.printLRU();
 
-    return 0;
-}
+//     return 0;
+// }
