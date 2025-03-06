@@ -1,3 +1,0 @@
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/build/CMakeFiles/main.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/build/CMakeFiles/edit_cache.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/build/CMakeFiles/rebuild_cache.dir

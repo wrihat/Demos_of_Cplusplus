@@ -1,3 +1,0 @@
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/rw_locker/build/CMakeFiles/main.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/rw_locker/build/CMakeFiles/edit_cache.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/rw_locker/build/CMakeFiles/rebuild_cache.dir

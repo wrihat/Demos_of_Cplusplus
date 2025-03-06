@@ -1,3 +1,0 @@
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/notebook/build/CMakeFiles/main.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/notebook/build/CMakeFiles/edit_cache.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/notebook/build/CMakeFiles/rebuild_cache.dir

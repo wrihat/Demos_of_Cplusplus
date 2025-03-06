@@ -1,3 +1,0 @@
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/lock_guard_and_unique_lock/build/CMakeFiles/main.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/lock_guard_and_unique_lock/build/CMakeFiles/edit_cache.dir
-/home/jiajun/workspace/projects/Demos_of_Cplusplus/lock_guard_and_unique_lock/build/CMakeFiles/rebuild_cache.dir
