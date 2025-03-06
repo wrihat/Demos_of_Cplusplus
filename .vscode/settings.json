@@ -1,8 +1,5 @@
 {
     "files.associations": {
-        "*.sqlbook": "sql",
-        "*.ndjson": "jsonl",
-        "*.dbclient-js": "javascript",
         "*.cc": "cpp",
         "iostream": "cpp",
         "ostream": "cpp",
@@ -58,10 +55,6 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "list": "cpp",
-        "sstream": "cpp",
-        "shared_mutex": "cpp",
-        "optional": "cpp"
-    },
-    "Lingma.cloudModelAutoTriggerGenerateLength": "long"
+        "list": "cpp"
+    }
 }
