@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/src/include
 
 CXX_FLAGS = -std=gnu++11
 

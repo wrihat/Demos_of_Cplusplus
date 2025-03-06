@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/src/mystring.cpp" "CMakeFiles/main.dir/src/mystring.cpp.o" "gcc" "CMakeFiles/main.dir/src/mystring.cpp.o.d"
   "/home/jiajun/workspace/projects/Demos_of_Cplusplus/string_implement/src/string_implement.cpp" "CMakeFiles/main.dir/src/string_implement.cpp.o" "gcc" "CMakeFiles/main.dir/src/string_implement.cpp.o.d"
   )
 

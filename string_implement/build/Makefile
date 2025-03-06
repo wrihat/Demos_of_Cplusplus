@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/mystring.o: src/mystring.cpp.o
+.PHONY : src/mystring.o
+
+# target to build an object file
+src/mystring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mystring.cpp.o
+.PHONY : src/mystring.cpp.o
+
+src/mystring.i: src/mystring.cpp.i
+.PHONY : src/mystring.i
+
+# target to preprocess a source file
+src/mystring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mystring.cpp.i
+.PHONY : src/mystring.cpp.i
+
+src/mystring.s: src/mystring.cpp.s
+.PHONY : src/mystring.s
+
+# target to generate assembly for a file
+src/mystring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mystring.cpp.s
+.PHONY : src/mystring.cpp.s
+
 src/string_implement.o: src/string_implement.cpp.o
 .PHONY : src/string_implement.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/mystring.o"
+	@echo "... src/mystring.i"
+	@echo "... src/mystring.s"
 	@echo "... src/string_implement.o"
 	@echo "... src/string_implement.i"
 	@echo "... src/string_implement.s"
