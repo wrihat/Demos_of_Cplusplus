@@ -6,6 +6,7 @@
 #include <vector>
 #include <functional>
 using namespace std;
+
 void TopK_innerMethod1(vector<int>& vec, int k) {
     // 内置方法 priority_queue
     priority_queue<int, vector<int>, greater<int>>  minHeap;   // priority_queue默认为大根堆，使用geater可以转化为小根堆
@@ -24,6 +25,8 @@ void TopK_innerMethod1(vector<int>& vec, int k) {
         minHeap.pop();
     }
 }
+
+
 
 void TopK_innerMethod2(vector<int>& vec, int k) {
     // C++中内置堆结构实现方法2： 使用堆算法函数，make_heap、push_heap、pop_heap， 需要自定义比较函数
